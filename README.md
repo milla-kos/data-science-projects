@@ -1,4 +1,4 @@
-# Machine Learning projects
+# Machine Learning Projects
   1. nuclear-atypia: Nuclear Atypia Scoring in Breast Cancer Histological Images Using Transfer Learning
      - Using convolutional neural network and transfer learning to classify breast cancer histological images based on nuclear atypia.
      - documentation.pdf file presents the project report with details about used methods and project conclusions.
