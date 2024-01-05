@@ -1,7 +1,7 @@
 # Machine Learning projects
-  1. nuclei_atypia: Nuclei Atypia Scoring in Breast Cancer Histological Images Using Transfer Learning
-     - A project completed as a part of AI in Health Technologies course.
-     - Project_documentation file presents the project reports with details about used methods and project conclusions.
-  2. IBD_classifier: Machine Learning to Aid Diagnosis of Inflammatory Bowel Disease Using Metagenomic Data
-     - A machine learning project completed as part of Life Science Technologies project course.
-     - Project_documentation shows project details, results and conclusions.
+  1. nuclear-atypia: Nuclear Atypia Scoring in Breast Cancer Histological Images Using Transfer Learning
+     - Using convolutional neural network and transfer learning to classify breast cancer histological images based on nuclear atypia.
+     - documentation.pdf file presents the project report with details about used methods and project conclusions.
+  2. IBD-classifier: Machine Learning to Aid Diagnosis of Inflammatory Bowel Disease Using Metagenomic Data
+     - Classifying healthy individuals and IBD patients using two metagenomic datasets and a support vector machine classifier.
+     - documentation.pdf file shows project details, results and conclusions.
