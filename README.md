@@ -1,6 +1,7 @@
 # Machine Learning Projects
   1. nuclear-atypia: Nuclear Atypia Scoring in Breast Cancer Histological Images Using Transfer Learning
      - Using convolutional neural network and transfer learning to classify breast cancer histological images based on nuclear atypia.
+     - create_dataset.py file uses the frames and atypia scores stored in 'raw_data' folder to construct the final dataset to be used as input to the CNN.
      - documentation.pdf file presents the project report with details about used methods and project conclusions.
   2. IBD-classifier: Machine Learning to Aid Diagnosis of Inflammatory Bowel Disease Using Metagenomic Data
      - Classifying healthy individuals and IBD patients using metagenomic data and three classifiers.
