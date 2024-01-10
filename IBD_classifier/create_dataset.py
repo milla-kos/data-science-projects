@@ -39,10 +39,10 @@ def delete_zero_cols(df):
 
 
 def main():
-    directory = "/Users/millakosonen/Documents/LST project B/marker_abundance/"
+    directory = "studies/"
     df = create_dataset(directory)
     print(df.shape)
-    #df.to_csv("/Users/millakosonen/Documents/LST project B/marker_abundance_NielsenVilaLi.csv")
+    df.to_csv("data/relative_abundance_NielsenVilaLi.csv")
 
 
 main()
