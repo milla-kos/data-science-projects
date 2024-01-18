@@ -3,6 +3,8 @@ BiocManager::install("waldronlab/curatedMetagenomicAnalyses")
 library(dplyr)
 library(curatedMetagenomicData)
 library(curatedMetagenomicAnalyses)
+
+# load data
 data("sampleMetadata")
 availablediseases <- pull(sampleMetadata, study_condition) %>%
   table() %>%
@@ -34,7 +36,6 @@ for (study in studies) {
   print(paste0("Next study condition:", cond, " /// Body site: ", unique(colData(se)$body_site)))
   print(with(colData(se), table(study_name, study_condition)))
   cat("\n \n")
-  save(se, file = paste0(cond, ".rda"))
   flattext <- select(as.data.frame(colData(se)), c("study_name", "study_condition", "subject_id"))
   rownames(flattext) <- colData(se)$sample_id
   flattext <- cbind(flattext, data.frame(t(assay(se))))
