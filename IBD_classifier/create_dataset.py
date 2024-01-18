@@ -12,7 +12,6 @@ def create_dataset(directory):
         # check if f is a file
         if os.path.isfile(f):
             df = pd.read_csv(f)
-            # print(np.sum(df.iloc[:, 4:], axis=1))
             df = delete_zero_cols(df)
             studies.append(df)
 
@@ -39,10 +38,10 @@ def delete_zero_cols(df):
 
 
 def main():
-    directory = "studies/"
+    directory = "IBD_classifier/studies"
     df = create_dataset(directory)
-    print(df.shape)
-    df.to_csv("data/relative_abundance_NielsenVilaLi.csv")
-
+    print("final shape: ", df.shape)
+    print(df.head(5))
+    #df.to_csv("data/relative_abundance_NielsenVilaLi.csv")
 
 main()
